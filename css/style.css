@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container.intro {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container.intro .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container.intro .logo .icon {
+    position: relative;
+    height: 80px;
+}
+
+.container.intro .logo .icon img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container.intro .logo .title {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:is(.container.register, .container.login) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+:is(.container.register, .container.login) .logo {
+    height: 210px;
+}
+
+:is(.container.register, .container.login) .logo img{
+    width: 270px;
+    height: 270px;
+}
+
+:is(.container.register, .container.login) .form {
+    min-width: 300px;
+    width: 50%;
+    padding: 10px;
+}
+
+:is(.container.register, .container.login) .form .field {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    border: 2px solid rgba(0,0,0,100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+:is(.container.register, .container.login) .form .field input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+:is(.container.register, .container.login) .form .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+}
+
+:is(.container.register, .container.login) .form .buttons button {
+    width: 80%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+:is(.container.register, .container.login) .form .buttons span {
+    font-size: 18px;
+}
+
+:is(.container.register, .container.login) .form .buttons a {
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+}
+
+
+
